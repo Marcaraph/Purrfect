@@ -22,3 +22,10 @@ Cat Page : présente la photo à vendre avec quelques détails supplémentaires 
 Cart Page : page de récapitulatif du panier d'achat de l'utilisateur, avec un lien de paiement.
 
 Form Page : à compléter ultérieurement.
+
+Liens Github des devs :
+
+Alexia Scherer : https://github.com/evarellapucky
+Thomas Audevie : https://github.com/tchanque
+Damien Generet : https://github.com/Damien-Generet
+Raphaël Marcarini : https://github.com/Marcaraph
