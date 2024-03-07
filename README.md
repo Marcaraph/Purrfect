@@ -1,7 +1,7 @@
 Lien maquette FIGMA : https://www.figma.com/file/biBwGmRbZCoP4jWKaHEEzn/Purrfect?type=design&node-id=0-1&mode=design&t=4uq2My3OSHCQGuJs-0
 
 Photos Sketching :
- - Landing Page : https://i.imgur.com/cYwN62C.png
+ - Landing Page : [Landing Page](https://i.imgur.com/cYwN62C.png)
  - Cat Page : https://i.imgur.com/MasZ1yF.png
  - Cart Page : https://i.imgur.com/rBsy0uT.png
 
