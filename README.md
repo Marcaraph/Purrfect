@@ -25,7 +25,7 @@ Form Page : à compléter ultérieurement.
 
 Liens Github des devs :
 
-Alexia Scherer : https://github.com/evarellapucky
-Thomas Audevie : https://github.com/tchanque
-Damien Generet : https://github.com/Damien-Generet
-Raphaël Marcarini : https://github.com/Marcaraph
+- Alexia Scherer : https://github.com/evarellapucky
+- Thomas Audevie : https://github.com/tchanque
+- Damien Generet : https://github.com/Damien-Generet
+- Raphaël Marcarini : https://github.com/Marcaraph
