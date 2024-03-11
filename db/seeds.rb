@@ -10,6 +10,6 @@
 Item.destroy_all
 
 #créaion de 10 items
-10.times do
+20.times do
   Item.create(title: Faker::Lorem.sentence(word_count: 4), description: Faker::Lorem.sentence(word_count: 40), price: rand(10..50), image_url: "https://www.istockphoto.com/fr/photo/sunny-chat-gm508030340-85015717")
 end
