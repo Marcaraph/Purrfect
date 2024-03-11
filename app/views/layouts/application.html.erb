@@ -6,13 +6,83 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "application", media: 'all', "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", type: "module" %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-purrfect">
+  <a class="navbar-brand" href="/">
+    Logo
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="d-flex collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+    <div class="collapse navbar-collapse">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Catalogue</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Reviews</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact Us</a>
+      </li>
+    </div>
+    <div class="collapse navbar-collapse">  
+      <div class="nav-item">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Account
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Log in</a>
+            <a class="dropdown-item" href="#">Sign up</a>
+          </div>
+        </li>
+      </div>
+      <li class="nav-item">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <a class="nav-link" href="#">Cart</a>
+      </li>
+    </div>  
+      </ul>
+  </div>
+</nav>
+
     <%= yield %>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
+
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div>
+      <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+    </div>
+    <div>
+      <div>
+        <p>SUIVEZ-NOUS</p>
+      </div>
+      <ul class="nav col-md-4">
+        <li class="nav-item"><a href="https://github.com/Damien-Generet" class="nav-link px-2">Damien Generet</a></li>
+        <li class="nav-item"><a href="https://github.com/tchanque" class="nav-link px-2">Thomas Audevie</a></li>
+        <li class="nav-item"><a href="https://github.com/evarellapucky" class="nav-link px-2">Alexia Scherer</a></li>
+        <li class="nav-item"><a href="https://github.com/Marcaraph" class="nav-link px-2">Raphaël Marcarini</a></li>
+      </ul>
+    </div>
+    <div class="nav col-md-4 justify-content-center">
+      <p>© 2024 Crakito Team x THP</p>
+    </div>  
+  </footer>
+</div>
   </body>
 </html>

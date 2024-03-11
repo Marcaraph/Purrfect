@@ -267,7 +267,8 @@ DEPENDENCIES
   bootsnap
   capybara
   debug
-  faker (~> 3.2)
+  devise
+  faker
   jbuilder
   jsbundling-rails
   pg (~> 1.1)
@@ -276,7 +277,7 @@ DEPENDENCIES
   selenium-webdriver
   sprockets-rails
   stimulus-rails
-  table_print (~> 1.5)
+  table_print
   turbo-rails
   tzinfo-data
   web-console
