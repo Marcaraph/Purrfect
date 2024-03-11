@@ -65,3 +65,7 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem "faker", "~> 3.2"
+
+gem "table_print", "~> 1.5"
