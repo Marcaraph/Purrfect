@@ -54,3 +54,63 @@ body{
 
 }
 
+.logo_nav{
+   scale: 0.8;
+}
+.bg-purrfect div a{
+    color: #FEE8B0;
+    transform: 0.1s;
+    font-size: 1.2em;
+    border-radius: 20px;
+}
+.bg-purrfect div a:hover{
+    text-decoration: underline;
+    color: #FEE8B0;
+    background-color: #f97b22;
+    scale: 0.9;
+    border-radius: 20px;
+    transition: 0.1s;
+}
+
+/* FOOTER */
+
+
+.container_footer ul{
+    list-style: none;
+}
+
+.container_footer ul a:hover{
+    text-decoration: underline;
+    color: #f97b22;
+    transition: 0.2s;
+}
+
+.border_top{
+  border-top: 1px solid #7C9070;
+}
+
+.left_box_footer {
+    gap: 2em;
+}
+
+.container_footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+}
+
+.img_footer{
+    width: 7.5em;
+}
+
+/* FORM LOGIN */
+
+.container_login a, h2{
+    color: #7C9070;
+}
+
+.container_login a:hover{
+    color: #f97b22;
+}
+
+
