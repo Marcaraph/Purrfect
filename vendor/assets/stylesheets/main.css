@@ -11,62 +11,46 @@ body{
     margin-top: 50px;
     margin-bottom: 30px;
 }
-.logo_nav{
-   scale: 0.8;
-}
-.bg-purrfect div a{
+.btn-primary{
+    background-color: #F97B22;
+    border-color: #F97B22;
     color: #FEE8B0;
-    transform: 0.1s;
-    font-size: 1.2em;
-    border-radius: 20px;
+    width: 10em;
+    transition: 0.3s;
+    --bs-btn-active-bg: #F97B22;
 }
-.bg-purrfect div a:hover{
-    text-decoration: underline;
+
+.btn-primary:hover{
+    background-color: #F97B22;
+    scale: 1.1;
+    transition: 0.3s;
+}
+
+.btn-secondary{
+    background-color: #A75E4E;
+    border-color: #A75E4E;
     color: #FEE8B0;
-    background-color: #f97b22;
-    scale: 0.9;
-    border-radius: 20px;
-    transition: 0.1s;
+    width: 10em;
+    transition: 0.3s;
+    --bs-btn-active-bg: #A75E4E;
 }
 
-/* FOOTER */
-
-
-.container_footer ul{
-    list-style: none;
+.btn-secondary:hover{
+    background-color: #A75E4E;
+    scale: 1.1;
+    transition: 0.3s;
 }
 
-.container_footer ul a:hover{
-    text-decoration: underline;
-    color: #f97b22;
-    transition: 0.2s;
+.card_item{
+    background-color: #9ca777;
+    color: #FEE8B0;
+    /* width: 25rem; */
+    margin: 1em 1em;
 }
 
-.border_top{
-  border-top: 1px solid #7C9070;
-}
+.card_item_title{
+    white-space: nowrap;
+    overflow: hidden;
 
-.left_box_footer {
-    gap: 2em;
-}
-
-.container_footer{
-    position: absolute;
-    width: 100%;
-    bottom: 0px;
-}
-
-.img_footer{
-    width: 7.5em;
-}
-
-/* FORM LOGIN */
-
-.container_login a, h2{
-    color: #7C9070;
-}
-
-.container_login a:hover{
-    color: #f97b22;
 }
 

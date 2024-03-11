@@ -1,14 +1,25 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Items</h1>
+<h1>Catalogue</h1>
 
-<div id="items">
+<div class="container">
+<div class="card-deck row">
   <% @items.each do |item| %>
-    <%= render item %>
-    <p>
-      <%= link_to "Show this item", item %>
-    </p>
+   <div class="col-lg-4 "> 
+    <div class="card card_item">
+      <img class="card-img-top" src="https://media.istockphoto.com/id/508030340/fr/photo/sunny-chat.jpg?s=2048x2048&w=is&k=20&c=Pwg60DIr0iYbQLwDXCHfdhfUgRKq7UdQsq6bfyAIaGA=" alt="Image de petit chaton beaucoup trop mignon">
+      <div class="card-body ">
+        <h5 class="card-title card_item_title"><strong><%= item.title %></strong></h5>
+        <p class="card-text"><strong>Price:</strong> <%= item.price %></p>
+      </div>
+      <div class="card-body d-flex justify-content-evenly">
+        <%= link_to "Show this item", item, class: "btn btn-primary", style: "margin-right: 1rem;" %>
+        <button type="button" class="btn btn-primary", style="margin-left: 1rem;">Add to cart </button>
+      </div>
+    </div>
+  </div>  
   <% end %>
-</div>
+</div> 
+</div> 
 
-<%= link_to "New item", new_item_path %>
+
