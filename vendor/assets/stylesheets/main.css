@@ -1,11 +1,16 @@
+
+body{
+    background-color: #Fee8b0;
+    max-height: 100vh;
+}
+
 /* NAVBAR */
 .bg-purrfect{
     background-color: #7C9070;
-    height: 10vh;
-    margin-top: 30px;
-    margin-bottom: 30px
+    height: 5vh;
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
-
 .btn-primary{
     background-color: #F97B22;
     border-color: #F97B22;
@@ -46,5 +51,6 @@
 .card_item_title{
     white-space: nowrap;
     overflow: hidden;
+
 }
 

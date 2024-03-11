@@ -14,19 +14,17 @@
 
   <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-purrfect">
-  <a class="navbar-brand" href="/">
-    Logo
+    <!-- --------------------------------------------------------- NAVBAR ------------------------------------------------------------------------------------- -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-purrfect font_nav">
+  <a class="" href="/">
+    <img class="logo_nav" src="https://i.ibb.co/frwFYXr/Vector.png" alt="logo Purrfect">
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="d-flex collapse navbar-collapse" id="navbarNavDropdown">
+  <div class="d-flex justify-content-between collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
-    <div class="collapse navbar-collapse">
-      <li class="nav-item active">
-        <a class="nav-link" href="/">Home </a>
-      </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Catalogue</a>
       </li>
@@ -36,9 +34,9 @@
       <li class="nav-item">
         <a class="nav-link" href="#">Contact Us</a>
       </li>
-    </div>
-    <div class="collapse navbar-collapse">  
-      <div class="nav-item">
+    </ul>
+    <ul class="navbar-nav m-2">
+      <div class="nav-item m-2">
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Account
@@ -49,11 +47,10 @@
           </div>
         </li>
       </div>
-      <li class="nav-item">
+      <li class="nav-item m-2">
         <i class="fa-solid fa-cart-shopping"></i>
         <a class="nav-link" href="#">Cart</a>
-      </li>
-    </div>  
+      </li> 
       </ul>
   </div>
 </nav>
@@ -62,28 +59,31 @@
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
-<div class="container">
-  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-    <div>
-      <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-      </a>
-    </div>
-    <div>
-      <div>
-        <p>SUIVEZ-NOUS</p>
-      </div>
-      <ul class="nav col-md-4">
-        <li class="nav-item"><a href="https://github.com/Damien-Generet" class="nav-link px-2">Damien Generet</a></li>
-        <li class="nav-item"><a href="https://github.com/tchanque" class="nav-link px-2">Thomas Audevie</a></li>
-        <li class="nav-item"><a href="https://github.com/evarellapucky" class="nav-link px-2">Alexia Scherer</a></li>
-        <li class="nav-item"><a href="https://github.com/Marcaraph" class="nav-link px-2">Raphaël Marcarini</a></li>
-      </ul>
-    </div>
-    <div class="nav col-md-4 justify-content-center">
+
+    <!--  ----------------------------------------------------------FOOTER ------------------------------------------------------------------------------------ -->
+
+<div class="container_footer">
+  <div class="m-auto footer_container">
+  <footer class="d-flex flex-wrap justify-content-around align-items-start border_top">
+  <div class="d-flex flex-column align-items-center p-2 left_box_footer">
+    <h5>SUIVEZ-NOUS</h5>
+    <ul class="ul_footer">
+      <li class="nav-item"><a href="https://github.com/Damien-Generet" class="nav-link px-2">Damien Generet</a></li>
+      <li class="nav-item"><a href="https://github.com/tchanque" class="nav-link px-2">Thomas Audevie</a></li>
+      <li class="nav-item"><a href="https://github.com/evarellapucky" class="nav-link px-2">Alexia Scherer</a></li>
+      <li class="nav-item"><a href="https://github.com/Marcaraph" class="nav-link px-2">Raphaël Marcarini</a></li>
+    </ul>
+  </div>
+    <div class="d-flex flex-column align-items-center">
+    <img class="img_footer" src="https://i.ibb.co/ggg1tgc/cat-playing-with-yarn-1.png" alt="cat-playing-with-yarn-1" border="0">
       <p>© 2024 Crakito Team x THP</p>
     </div>  
+
+    <div class="d-flex flex-column p-2 align-items-center">
+    <h5> THP </h5><p>Promo Hiver 2024 </p>
+    </div>
   </footer>
+  </div>
 </div>
   </body>
 </html>
