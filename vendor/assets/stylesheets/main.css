@@ -43,3 +43,8 @@
     margin: 1em 1em;
 }
 
+.card_item_title{
+    white-space: nowrap;
+    overflow: hidden;
+}
+
