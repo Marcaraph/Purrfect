@@ -3,8 +3,6 @@
 
 [Lien maquette FIGMA](https://www.figma.com/file/biBwGmRbZCoP4jWKaHEEzn/Purrfect?type=design&node-id=0-1&mode=design&t=4uq2My3OSHCQGuJs-0)
 
-TEST GIT CHECKOUT
-
 
 ### Photos Sketching :
  - [Landing Page](https://i.imgur.com/cYwN62C.png)
