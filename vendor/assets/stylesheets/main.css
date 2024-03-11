@@ -1,8 +1,45 @@
-
 /* NAVBAR */
 .bg-purrfect{
     background-color: #7C9070;
     height: 10vh;
     margin-top: 30px;
     margin-bottom: 30px
-};
+}
+
+.btn-primary{
+    background-color: #F97B22;
+    border-color: #F97B22;
+    color: #FEE8B0;
+    width: 10em;
+    transition: 0.3s;
+    --bs-btn-active-bg: #F97B22;
+}
+
+.btn-primary:hover{
+    background-color: #F97B22;
+    scale: 1.1;
+    transition: 0.3s;
+}
+
+.btn-secondary{
+    background-color: #A75E4E;
+    border-color: #A75E4E;
+    color: #FEE8B0;
+    width: 10em;
+    transition: 0.3s;
+    --bs-btn-active-bg: #A75E4E;
+}
+
+.btn-secondary:hover{
+    background-color: #A75E4E;
+    scale: 1.1;
+    transition: 0.3s;
+}
+
+.card_item{
+    background-color: #9ca777;
+    color: #FEE8B0;
+    /* width: 25rem; */
+    margin: 1em 1em;
+}
+
