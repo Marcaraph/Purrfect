@@ -1,10 +1,31 @@
-<p style="color: green"><%= notice %></p>
 
-<%= render @item %>
-
-<div>
-  <%= link_to "Edit this item", edit_item_path(@item) %> |
-  <%= link_to "Back to items", items_path %>
-
-  <%= button_to "Destroy this item", @item, method: :delete %>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6 picture-container">
+      <img src="https://media.istockphoto.com/id/508030340/fr/photo/sunny-chat.jpg?s=2048x2048&w=is&k=20&c=Pwg60DIr0iYbQLwDXCHfdhfUgRKq7UdQsq6bfyAIaGA=" class="img-fluid" alt=""></div>
+    <div class="col-md-6 show-item-text">
+      <div class="p-5">
+        <div id="details">
+          <h2>Details</h2>
+          <ul>
+            <li>Breed: Berger Allemand</li>
+            <li>Colour: Rainbow</li>
+            <li>Photo by: Nicolas Hulot</li>
+          </ul>
+        </div>
+        <div id="item-description">
+          <h2>Description</h2>
+          <p> <%= @item.description %> </p>
+        </div>
+        <div>
+          <h2>Price: $<%= @item.price %></h2>
+          <p>Delivery within 2 business days.</p>
+        </div>
+        <div>
+          <button class="btn btn-primary" style="margin: 1em 0"> Add to cart</button>
+          <%= link_to "Back to items", items_path, class: "btn btn-secondary m-3"%>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

@@ -113,4 +113,20 @@ body{
     color: #f97b22;
 }
 
+.picture-container {
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FEE8B0;
+    /* scale: 0.6; */
+  }
 
+.picture-container img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.show-item-text {
+    margin: 5rem 0;
+}
