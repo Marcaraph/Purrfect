@@ -1,16 +1,138 @@
 
+html{
+    height: 100vh;
+}
 body{
     background-color: #Fee8b0;
-    max-height: 100vh;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    padding-bottom: 10em;
+    padding-top: 50px;
 }
 
 /* NAVBAR */
 .bg-purrfect{
     background-color: #7C9070;
     height: 5vh;
-    margin-top: 50px;
+    
     margin-bottom: 30px;
 }
+
+.bg_dropdown{
+    background-color: #9ca777;
+}
+
+.logo_nav{
+   scale: 0.8;
+}
+.bg-purrfect div a{
+    text-decoration: underline 2px;
+    text-decoration-color: #f97c2200;
+    color: #FEE8B0;
+    transition: 0.1s;
+    font-size: 1.2em;
+    border-radius: 20px;
+}
+.bg-purrfect div a:hover{
+    text-decoration: underline 2px;
+    color: #FEE8B0;
+    text-decoration-color: #F97B22;
+    transition: 0.1s;
+    scale: 1.1;
+}
+
+.dropdown_link {
+    text-decoration: underline 2px;
+    text-decoration-color: #f97c2200;
+    color: #FEE8B0;
+    transition: 0.1s;
+    font-size: 1.2em;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.dropdown_link:hover {
+    text-decoration: underline 2px;
+    color: #FEE8B0;
+    text-decoration-color: #F97B22;
+    transition: 0.1s;
+    scale: 1.1;
+    background-color: rgba(245, 222, 179, 0);
+}
+/* FOOTER */
+.container_footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.container_footer ul{
+    list-style: none;
+}
+
+.container_footer ul a:hover{
+    text-decoration: underline;
+    color: #f97b22;
+    transition: 0.2s;
+}
+
+.border_top{
+  border-top: 1px solid #7C9070;
+}
+
+.left_box_footer {
+    gap: 2em;
+}
+
+.alert{
+    padding: 0px;
+}
+
+.img_footer{
+    width: 7.5em;
+}
+
+/* FORM LOGIN */
+
+.container_login{
+    
+}
+
+.container_login a, h2{
+    color: #7C9070;
+}
+
+.container_login a:hover{
+    color: #f97b22;
+}
+
+
+
+
+
+.picture-container {
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FEE8B0;
+    /* scale: 0.6; */
+  }
+
+.picture-container img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.show-item-text {
+    margin: 5rem 0;
+}
+
+
+/* -------------------------------------------------------------------- */ 
+
 .btn-primary{
     background-color: #F97B22;
     border-color: #F97B22;
@@ -52,81 +174,4 @@ body{
     white-space: nowrap;
     overflow: hidden;
 
-}
-
-.logo_nav{
-   scale: 0.8;
-}
-.bg-purrfect div a{
-    color: #FEE8B0;
-    transform: 0.1s;
-    font-size: 1.2em;
-    border-radius: 20px;
-}
-.bg-purrfect div a:hover{
-    text-decoration: underline;
-    color: #FEE8B0;
-    background-color: #f97b22;
-    scale: 0.9;
-    border-radius: 20px;
-    transition: 0.1s;
-}
-
-/* FOOTER */
-
-
-.container_footer ul{
-    list-style: none;
-}
-
-.container_footer ul a:hover{
-    text-decoration: underline;
-    color: #f97b22;
-    transition: 0.2s;
-}
-
-.border_top{
-  border-top: 1px solid #7C9070;
-}
-
-.left_box_footer {
-    gap: 2em;
-}
-
-.container_footer{
-    position: absolute;
-    width: 100%;
-    bottom: 0px;
-}
-
-.img_footer{
-    width: 7.5em;
-}
-
-/* FORM LOGIN */
-
-.container_login a, h2{
-    color: #7C9070;
-}
-
-.container_login a:hover{
-    color: #f97b22;
-}
-
-.picture-container {
-    /* height: 100vh; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #FEE8B0;
-    /* scale: 0.6; */
-  }
-
-.picture-container img{
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.show-item-text {
-    margin: 5rem 0;
 }
