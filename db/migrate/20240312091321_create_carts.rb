@@ -3,7 +3,7 @@ class CreateCarts < ActiveRecord::Migration[7.1]
     create_table :carts do |t|
       t.decimal :price
 
-      t.belongs_to :user
+      t.references :user, foreign_key: true
 
       t.timestamps
     end
