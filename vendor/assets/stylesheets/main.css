@@ -27,40 +27,47 @@ body{
 .logo_nav{
    scale: 0.8;
 }
+
+
 .bg-purrfect div a{
     text-decoration: underline 2px;
     text-decoration-color: #f97c2200;
     color: #FEE8B0;
-    transition: 0.1s;
     font-size: 1.2em;
-    border-radius: 20px;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border-radius: 50px;
+    box-shadow: inset 0 0 0 0 #F97B22;
+
 }
 .bg-purrfect div a:hover{
-    text-decoration: underline 2px;
     color: #FEE8B0;
+    background-color: #F97B22;
     text-decoration-color: #F97B22;
-    transition: 0.1s;
-    scale: 1.1;
+    scale: 0.9;
+    box-shadow: inset 0 -100px 0 0 #F97B22;
 }
 
-.dropdown_link {
-    text-decoration: underline 2px;
-    text-decoration-color: #f97c2200;
-    color: #FEE8B0;
-    transition: 0.1s;
-    font-size: 1.2em;
-    border-radius: 20px;
-    font-size: 16px;
+/*        HERO       */
+.hero_container{
+    border-bottom: solid 2px #7C9070;
+    padding-top: 10px;
+    margin-top: 50px;
+    border-radius: 50px;
 }
 
-.dropdown_link:hover {
-    text-decoration: underline 2px;
-    color: #FEE8B0;
-    text-decoration-color: #F97B22;
-    transition: 0.1s;
-    scale: 1.1;
-    background-color: rgba(245, 222, 179, 0);
+.hero_container h1{
+    color: #7C9070;
 }
+.hero_separation{
+    border-left: #7C9070 solid 1px;
+}
+
+svg{
+    fill: #F97B22;
+}
+
 /* FOOTER */
 .container_footer{
     position: absolute;
@@ -107,9 +114,6 @@ body{
 .container_login a:hover{
     color: #f97b22;
 }
-
-
-
 
 
 .picture-container {

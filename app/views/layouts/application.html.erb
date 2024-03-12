@@ -42,8 +42,8 @@
           <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">My Profile</a>
               <ul class="dropdown-menu bg_dropdown dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
-              <li><span class="dropdown-item dropdown_link"> MON PROFIL</span></li>
-              <li><span class="dropdown-item dropdown_link"><%= link_to "Sign out", destroy_user_session_path, method: :delete, data: {turbo_method: :delete} %></span></li>
+              <li><a class="dropdown-item"> MON PROFIL</a></li>
+              <li><%= link_to "Sign out", destroy_user_session_path, method: :delete, data: {turbo_method: :delete}, class: "dropdown-item" %></li>
               </ul>
           </li>
       <% else %>
@@ -53,8 +53,8 @@
           </a>
           
           <div class="dropdown-menu bg_dropdown" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item dropdown_link" href="/users/sign_in">Log in</a>
-            <a class="dropdown-item dropdown_link" href="/users/sign_up">Sign up</a>
+            <a class="dropdown-item text-center" href="/users/sign_in">Log in</a>
+            <a class="dropdown-item text-center" href="/users/sign_up">Sign up</a>
           </div>
         <% end %>
         </li>
