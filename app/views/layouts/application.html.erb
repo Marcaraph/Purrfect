@@ -59,10 +59,17 @@
         <% end %>
         </li>
       </div>
+      <% if user_signed_in? %>
       <li class="nav-item m-2">
         <i class="fa-solid fa-cart-shopping"></i>
-        <a class="nav-link" href="#">Cart</a>
-      </li> 
+        <%= link_to "Cart", cart_path(Cart.find_by(user: current_user).id.to_i), class: "nav-link" %>
+      </li>
+      <% else %>
+      <li class="nav-item m-2">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <a class="nav-link" href="/users/sign_in">Cart</a>
+    </li>
+    <% end %>
       </ul>
   </div>
 </nav>
