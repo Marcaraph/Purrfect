@@ -137,11 +137,13 @@ svg{
 
 /* -------------------------------------------------------------------- */ 
 
+/* BUTTON PRIMARY */
+
 .btn-primary{
     background-color: #F97B22;
     border-color: #F97B22;
     color: #FEE8B0;
-    width: 10em;
+    width: 100%;
     transition: 0.3s;
     --bs-btn-active-bg: #F97B22;
 }
@@ -152,11 +154,13 @@ svg{
     transition: 0.3s;
 }
 
+/* BUTTON SECONDARY */
+
 .btn-secondary{
     background-color: #A75E4E;
     border-color: #A75E4E;
     color: #FEE8B0;
-    width: 10em;
+    width: 100%;
     transition: 0.3s;
     --bs-btn-active-bg: #A75E4E;
 }
@@ -166,6 +170,8 @@ svg{
     scale: 1.1;
     transition: 0.3s;
 }
+
+/* ITEM CARD INDEX */
 
 .card_item{
     background-color: #9ca777;
@@ -178,4 +184,26 @@ svg{
     white-space: nowrap;
     overflow: hidden;
 
+}
+
+/* CART SHOW */
+
+.cart_background{
+    background-color: #9ca777;
+}
+
+.cart_card {
+    padding: 2%; 
+    border-right: 1px solid white;
+    border-bottom: 1px solid #7C9070;
+}
+
+.cart-item-text{
+    padding: 2%;
+    color: white;
+}
+
+.cart-item-summary{
+    padding: 2%;
+    color: white;
 }
