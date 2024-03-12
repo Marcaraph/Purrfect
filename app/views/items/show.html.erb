@@ -22,7 +22,11 @@
           <p>Delivery within 2 business days.</p>
         </div>
         <div>
-          <button class="btn btn-primary" style="margin: 1em 0"> Add to cart</button>
+          <% if user_signed_in? %>
+          <%= button_to "Add to cart", cart_items_path, method: :post, params: { item: @item }, class: "btn btn-primary" %>
+          <% else %>
+          <%= link_to "Add to cart", new_user_session_path, class: "btn btn-primary" %>
+          <% end %>
           <%= link_to "Back to items", items_path, class: "btn btn-secondary m-3"%>
         </div>
       </div>
