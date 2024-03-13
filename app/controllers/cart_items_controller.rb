@@ -15,11 +15,7 @@ class CartItemsController < ApplicationController
           format.json { render :show, status: :created, location: @CartItem }
         end
     end
-    if @CartItem.save
-      @current_cart = current_user.cart
-      @current_cart.update(price: @current_cart.price + @CartItem.price)
-      
-    end
+  
   end
 
   def destroy

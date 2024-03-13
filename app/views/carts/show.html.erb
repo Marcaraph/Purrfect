@@ -34,7 +34,7 @@
           <div class="mt-5 mb-2">
             <h4 class="text-total">Total: <%= @all_cart_items.sum(&:price) %>€</h4>
           </div>
-          <button class="btn btn-primary w-25">Confirm</button>
+          <%= button_to "Passer commande", checkout_create_path(total: @all_cart_items.sum(&:price)), class: "btn btn-primary", data: {turbo: false} %>
       </div>    
     </div>
     <% end %>
