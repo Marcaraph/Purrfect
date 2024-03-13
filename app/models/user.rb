@@ -4,8 +4,8 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  has_one :cart       
-
+  has_one :cart, dependent: :destroy     
+  has_many :orders, dependent: :destroy
   validates :email, presence: true, uniqueness: true, format: { with: /\A[^@\s]+@([^@.\s]+\.)+[^@.\s]+\z/ }
 
   after_create :create_empty_cart, :welcome_send
