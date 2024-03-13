@@ -8,7 +8,8 @@ class UsersController < ApplicationController
 
   def destroy
     user = User.find(current_user.id)
-    user.cart.destroy
+    # user.cart.destroy
+    # user.order.destroy
     user.destroy
     redirect_to root_path
   end
