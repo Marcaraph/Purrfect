@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  
   devise_for :users
   # resources :users do
   #   resources :carts, except: [:index]
@@ -7,7 +8,7 @@ Rails.application.routes.draw do
   resources :items
   resources :cart_items, only: [:create, :destroy]
   resources :orders, only: [:new, :create]
-
+  resources :users, only: [:show, :destroy]
   scope '/checkout' do
     post 'create', to: 'checkout#create', as: 'checkout_create'
     get 'success', to: 'checkout#success', as: 'checkout_success'

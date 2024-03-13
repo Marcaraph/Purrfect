@@ -143,7 +143,6 @@ svg{
     background-color: #F97B22;
     border-color: #F97B22;
     color: #FEE8B0;
-    width: 100%;
     transition: 0.3s;
     --bs-btn-active-bg: #F97B22;
 }
@@ -160,7 +159,6 @@ svg{
     background-color: #A75E4E;
     border-color: #A75E4E;
     color: #FEE8B0;
-    width: 100%;
     transition: 0.3s;
     --bs-btn-active-bg: #A75E4E;
 }
@@ -220,4 +218,19 @@ svg{
     justify-content: center;
     align-items: center;
     background-color: #9ca777;
+}
+
+.profile_border{
+    border-bottom: 1px solid #7C9070;
+    padding-bottom: 5px;
+}
+
+.profile_bg{
+    background-color: #7C9070;
+    color: #FEE8B0;
+    box-shadow: 1px 1px 10px black;
+}
+.profile_bg h4{
+    color: #FEE8B0;
+    border-bottom: 1px solid #F97B22;
 }

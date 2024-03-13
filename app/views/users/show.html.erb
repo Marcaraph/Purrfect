@@ -1,0 +1,76 @@
+
+<div class="container">
+<div class="row">
+		<div class="col-12">
+			<!-- Page title -->
+			<div class="my-5 d-flex align-items-center gap-3 profile_border">
+				<h3>My Profile</h3>
+                <a href="/users/edit"><button type="button" class="btn btn-primary btn-lg">Edit profile</button></a>
+				<hr>
+			</div>
+			<!-- Form START -->
+			<form class="file-upload">
+				<div class="row mb-5 gx-5">
+					<!-- Contact detail -->
+					<div class="col-xxl-8 mb-xxl-0">
+						<div class="bg-secondary-soft px-4 py-5 rounded profile_bg">
+							<div class="row g-3">
+								<h4 class="mb-4 mt-0">Contact detail</h4>
+								<!-- First Name -->
+								<div class="col-md-6">
+									<label class="form-label">First Name :</label>
+									<p><% if current_user.first_name == nil %>First name<% else %> <%= current_user.first_name %> <% end %></p>
+								</div>
+								<!-- Last name -->
+								<div class="col-md-6">
+									<label class="form-label">Last Name :</label>
+									<p><% if current_user.last_name == nil %>We don't know...<% else %> <%= current_user.last_name %> <% end %></p>
+								</div>
+								<!-- Mobile number -->
+								<div class="col-md-6">
+									<label class="form-label">Mobile number :</label>
+									<p><% if current_user.phone_number == nil %>We don't know...<% else %> <%= current_user.phone_number %> <% end %></p>
+								</div>
+								<!-- Email -->
+								<div class="col-md-6">
+									<label for="inputEmail4" class="form-label">Email :</label>
+									<p><%= current_user.email %></p>
+								</div>
+                <!-- Address -->
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Address :</label>
+                  <p><% if current_user.adress == nil %>We don't know...<% else %> <%= current_user.adress %> <% end %></p>
+                </div>
+								<div class="col-md-6">
+									<label for="inputEmail4" class="form-label">City :</label>
+									<p><% if current_user.city == nil %>We don't know...<% else %> <%= current_user.city %> <% end %></p>
+								</div>                                                              
+								<div class="col-md-6">
+									<label for="inputEmail4" class="form-label">Country :</label>
+									<p><% if current_user.country == nil %>We don't know...<% else %> <%= current_user.country %> <% end %></p>
+								</div>
+								<div class="col-md-6">
+									<label for="inputEmail4" class="form-label">Zip Code :</label>
+                                    <p><% if current_user.zip_code == nil %>We don't know...<% else %> <%= current_user.zip_code %> <% end %></p>
+								</div>
+							</div> <!-- Row END -->
+						</div>
+					</div>
+          <div class="col-xxl-4">
+						<div class="bg-secondary-soft px-4 py-5 rounded">
+							<div class="row g-3 py-5">
+								<img src="https://i.ibb.co/yY4Lzpm/8100-1-04-Photoroom-png-Photoroom.png" alt="Petit chat qui fait du yoga">
+							</div>
+						</div>
+					</div>          
+				</div> <!-- Row END -->
+
+					
+							</div>
+						</div>
+					</div>
+				</div> <!-- Row END -->
+			</form> <!-- Form END -->
+		</div>
+	</div>
+	</div>
