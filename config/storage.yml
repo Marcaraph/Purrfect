@@ -11,8 +11,15 @@ local:
 #   service: S3
 #   access_key_id: <%= Rails.application.credentials.dig(:aws, :access_key_id) %>
 #   secret_access_key: <%= Rails.application.credentials.dig(:aws, :secret_access_key) %>
-#   region: us-east-1
-#   bucket: your_own_bucket-<%= Rails.env %>
+#   region: eu-west-3
+#   bucket: purrfect-item-images-<%= Rails.env %>
+
+amazon:
+  service: S3
+  access_key_id: <%= ENV['AWS_ACCESS_KEY'] %>
+  secret_access_key: <%= ENV['AWS_SECRET_KEY'] %>
+  region: eu-west-3 #a priori, si tu es en France, il faut mettre ici : eu-west-3
+  bucket: purrfect-item-images #Mets ici le nom de ton bucket. Par exemple : prisme
 
 # Remember not to checkin your GCS keyfile to a repository
 # google:

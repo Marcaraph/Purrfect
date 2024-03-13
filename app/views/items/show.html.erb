@@ -2,11 +2,16 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-6 picture-container">
-      <img src="https://media.istockphoto.com/id/508030340/fr/photo/sunny-chat.jpg?s=2048x2048&w=is&k=20&c=Pwg60DIr0iYbQLwDXCHfdhfUgRKq7UdQsq6bfyAIaGA=" class="img-fluid" alt=""></div>
+    <%if @item.picture.attached?%>
+      <%= image_tag @item.picture, class:"img-fluid", alt: 'picture of cat' %>
+    <%else%>
+      <img class="card-img-top" src="https://media.istockphoto.com/id/508030340/fr/photo/sunny-chat.jpg?s=2048x2048&w=is&k=20&c=Pwg60DIr0iYbQLwDXCHfdhfUgRKq7UdQsq6bfyAIaGA=" alt="Image de petit chaton beaucoup trop mignon">
+    <%end%>
+
     <div class="col-md-6 show-item-text">
       <div class="p-5">
         <div id="details">
-          <h2>Details</h2>
+          <h2>Details :<%= @item.title %></h2>
           <ul>
             <li>Breed: Berger Allemand</li>
             <li>Colour: Rainbow</li>

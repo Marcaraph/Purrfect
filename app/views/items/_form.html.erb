@@ -27,8 +27,10 @@
   </div>
 
   <div>
-    <%= form.label :image_url, style: "display: block" %>
-    <%= form.text_field :image_url %>
+    <%= form.file_field :picture %>
+    <%= submit_tag "upload picture" %>
+    <!-- <%= form.label :image_url, style: "display: block" %> -->
+    <!-- <%= form.text_field :image_url %> -->
   </div>
 
   <div>
