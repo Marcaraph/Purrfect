@@ -202,3 +202,22 @@ svg{
 .text-total{
     color: white; 
 }
+
+
+/* TOTAL PRICE */
+
+.total_flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+
+.empty_cart{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9ca777;
+}

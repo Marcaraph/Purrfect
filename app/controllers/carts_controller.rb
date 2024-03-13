@@ -8,6 +8,12 @@ class CartsController < ApplicationController
 
   # GET /carts/1 or /carts/1.json
   def show
+    @all_items = []
+    @all_cart_items = CartItem.where(cart: current_user.cart)
+    @all_cart_items.each do |instance|
+      @all_items << instance.item # instance est une instance de CartItem, donc instance.item est une instance de Item (le produit)
+    end
+    @cart = current_user.cart
   end
 
   # GET /carts/new
