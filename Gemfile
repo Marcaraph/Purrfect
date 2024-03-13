@@ -8,6 +8,7 @@ gem 'table_print'
 
 gem 'devise'
 
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.3", ">= 7.1.3.2"
 
@@ -73,3 +74,7 @@ group :test do
 end
 
 gem "dockerfile-rails", ">= 1.6", :group => :development
+
+gem "letter_opener", "~> 1.9"
+
+gem "dotenv-rails", "~> 3.1"
