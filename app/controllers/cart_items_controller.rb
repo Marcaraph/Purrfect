@@ -11,7 +11,7 @@ class CartItemsController < ApplicationController
 
     respond_to do |format|
         if @CartItem.save
-          format.html { redirect_back fallback_location: root_path, notice: "Item was successfuly added to yout cart." }
+          format.html { redirect_back fallback_location: false, notice: "Item was successfuly added to yout cart." }
           format.json { render :show, status: :created, location: @CartItem }
         end
     end

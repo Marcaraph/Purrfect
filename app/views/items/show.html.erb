@@ -3,16 +3,16 @@
   <div class="row">
     <div class="col-md-6 picture-container">
       <%if @item.picture.attached?%>
-        <%= image_tag @item.picture, class:"img-fluid", alt: 'picture of cat' %>
+        <%= image_tag @item.picture, class:"img-fluid img_item", alt: 'picture of cat' %>
       <%else%>
-        <img class="img-fluid" src="https://media.istockphoto.com/id/508030340/fr/photo/sunny-chat.jpg?s=2048x2048&w=is&k=20&c=Pwg60DIr0iYbQLwDXCHfdhfUgRKq7UdQsq6bfyAIaGA=" alt="Image de petit chaton beaucoup trop mignon">
+        <img class="img-fluid img_item" src="https://media.istockphoto.com/id/508030340/fr/photo/sunny-chat.jpg?s=2048x2048&w=is&k=20&c=Pwg60DIr0iYbQLwDXCHfdhfUgRKq7UdQsq6bfyAIaGA=" alt="Image de petit chaton beaucoup trop mignon">
       <%end%>
     </div>
 
     <div class="col-md-6 show-item-text">
       <div class="p-5">
         <div id="details">
-          <h2>Details :<%= @item.title %></h2>
+          <h2>Details : <%= @item.title %></h2>
           <ul>
             <li>Breed: Berger Allemand</li>
             <li>Colour: Rainbow</li>
@@ -24,7 +24,7 @@
           <p> <%= @item.description %> </p>
         </div>
         <div>
-          <h2>Price: $<%= @item.price %></h2>
+          <h2>Price : $<%= @item.price %></h2>
           <p>Delivery within 2 business days.</p>
         </div>
         <div class="show_item_button_container mt-4">
