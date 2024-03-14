@@ -207,8 +207,6 @@ svg{
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    
 }
 
 .empty_cart{
@@ -232,4 +230,12 @@ svg{
 .profile_bg h4{
     color: #FEE8B0;
     border-bottom: 1px solid #F97B22;
+}
+
+/* SHOW USER */
+.orders_on_profile table{
+    background-color: #7C9070;
+    color: #FEE8B0;
+    width: 100%;
+    text-align: center;
 }
