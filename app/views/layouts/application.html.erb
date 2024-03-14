@@ -43,7 +43,7 @@
               <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Account</a>
               <ul class="dropdown-menu bg_dropdown dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
               <li><%= link_to "My Profile", user_path(current_user), class: "dropdown-item" %></li>
-              <li><%= link_to "Sign out", destroy_user_session_path, method: :delete, data: {turbo_method: :delete}, class: "dropdown-item" %></li>
+              <li><%= link_to "Sign out", destroy_user_session_path, method: :delete, data: {turbo_method: :delete, confirm: "Are you sure?", turbo_confirm: "Are you sure?" }, class: "dropdown-item" %></li>
               </ul>
           </li>
       <% else %>
@@ -77,8 +77,7 @@
 
 
     <%= yield %>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+
 
 
     <!--  ----------------------------------------------------------FOOTER ------------------------------------------------------------------------------------ -->

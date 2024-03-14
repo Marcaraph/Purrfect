@@ -2,14 +2,18 @@
 html{
     height: 100vh;
 }
+
 body{
     background-color: #Fee8b0;
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    position: relative;
-    padding-bottom: 10em;
+
     padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
 
 /* NAVBAR */
@@ -70,7 +74,6 @@ svg{
 
 /* FOOTER */
 .container_footer{
-    position: absolute;
     bottom: 0px;
     width: 100%;
 }
@@ -134,6 +137,13 @@ svg{
     justify-content: space-evenly;
 }
 
+.img_item {
+    width: 750px;
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+}
+
 /* -------------------------------------------------------------------- */ 
 
 /* BUTTON PRIMARY */
@@ -168,25 +178,40 @@ svg{
     transition: 0.3s;
 }
 
-/* ITEM CARD INDEX */
+/* ITEMS INDEX */
 
-.card_item{
+.title_centered {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.catalogue_card_item{
     background-color: #9ca777;
     color: #FEE8B0;
     /* width: 25rem; */
     margin: 1em 1em;
 }
 
-.card_item_title{
+.catalogue_card_item_title{
     white-space: nowrap;
     overflow: hidden;
 
+}
+
+.card_catalogue {
+    max-width: 382px;
+    max-height: 255px;
+    object-fit: cover;
+    object-position: center;
 }
 
 /* CART SHOW */
 
 .cart_background{
     background-color: #9ca777;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .cart_card {
