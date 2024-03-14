@@ -12,9 +12,14 @@
     <% @all_cart_items.each do |cart_item| %>
     <div class="card-columns col-md-12"> <!-- Début de la div des cartes -->
       <div class="row cart_card">
-          <div id=cart-item-picture, class="d-flex justify-content-center align-items-center col-2">
-            <img src="https://media.istockphoto.com/id/508030340/fr/photo/sunny-chat.jpg?s=2048x2048&w=is&k=20&c=Pwg60DIr0iYbQLwDXCHfdhfUgRKq7UdQsq6bfyAIaGA=" class="img-fluid" alt="">
-          </div>
+        <div id=cart-item-picture, class="d-flex justify-content-center align-items-center col-2">
+          <%if cart_item.item.picture.attached?%>
+            <%= image_tag cart_item.item.picture, class:"card-img-top", alt: 'picture of cat' %>
+          <%else%>
+            <img class="card-img-top" src="https://media.istockphoto.com/id/508030340/fr/photo/sunny-chat.jpg?s=2048x2048&w=is&k=20&c=Pwg60DIr0iYbQLwDXCHfdhfUgRKq7UdQsq6bfyAIaGA=" alt="Image de petit chaton beaucoup trop mignon">
+          <%end%>
+        </div>
+        
           <div class="cart-item-text col-8">
             <h4> <%= cart_item.item.title %></h4>
             <p> <%= cart_item.item.description %></p> 
