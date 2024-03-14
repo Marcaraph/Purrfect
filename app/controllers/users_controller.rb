@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def show
-    @order = Order.where(user:params[:id])
+    @order = Order.where(user: current_user)
   end
 
   def index
