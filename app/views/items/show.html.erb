@@ -2,11 +2,12 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-6 picture-container">
-    <%if @item.picture.attached?%>
-      <%= image_tag @item.picture, class:"img-fluid", alt: 'picture of cat' %>
-    <%else%>
-      <img class="card-img-top" src="https://media.istockphoto.com/id/508030340/fr/photo/sunny-chat.jpg?s=2048x2048&w=is&k=20&c=Pwg60DIr0iYbQLwDXCHfdhfUgRKq7UdQsq6bfyAIaGA=" alt="Image de petit chaton beaucoup trop mignon">
-    <%end%>
+      <%if @item.picture.attached?%>
+        <%= image_tag @item.picture, class:"img-fluid", alt: 'picture of cat' %>
+      <%else%>
+        <img class="img-fluid" src="https://media.istockphoto.com/id/508030340/fr/photo/sunny-chat.jpg?s=2048x2048&w=is&k=20&c=Pwg60DIr0iYbQLwDXCHfdhfUgRKq7UdQsq6bfyAIaGA=" alt="Image de petit chaton beaucoup trop mignon">
+      <%end%>
+    </div>
 
     <div class="col-md-6 show-item-text">
       <div class="p-5">
@@ -26,13 +27,13 @@
           <h2>Price: $<%= @item.price %></h2>
           <p>Delivery within 2 business days.</p>
         </div>
-        <div>
+        <div class="show_item_button_container mt-4">
           <% if user_signed_in? %>
-          <%= button_to "Add to cart", cart_items_path, method: :post, params: { item: @item }, class: "btn btn-primary" %>
+            <%= button_to "Add to cart", cart_items_path, method: :post, params: { item: @item }, class: "btn btn-primary btn_show_item" %>
           <% else %>
-          <%= link_to "Add to cart", new_user_session_path, class: "btn btn-primary" %>
+          <%= link_to "Add to cart", new_user_session_path, class: "btn btn-primary btn_show_item"%>
           <% end %>
-          <%= link_to "Back to items", items_path, class: "btn btn-secondary m-3"%>
+          <%= link_to "Back to items", items_path, class: "btn btn-secondary btn_show_item"%>
         </div>
       </div>
     </div>
