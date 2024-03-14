@@ -4,7 +4,7 @@ class CartItemsController < ApplicationController
   end
   
   def create
-    item = Item.find(params[:item])
+    item = Item.friendly.find(params[:item])
     puts item
     puts current_user
     @CartItem = CartItem.new(price: item.price, cart: current_user.cart, item: item)

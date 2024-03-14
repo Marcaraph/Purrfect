@@ -13,7 +13,6 @@ class DeviseCreateUsers < ActiveRecord::Migration[7.1]
       t.string :country
       t.string :zip_code
       t.string :phone_number
-
       ## Recoverable
       t.string   :reset_password_token
       t.datetime :reset_password_sent_at

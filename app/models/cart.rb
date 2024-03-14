@@ -3,4 +3,7 @@ class Cart < ApplicationRecord
   validates :user_id, uniqueness: true
   has_many :cart_items, dependent: :destroy
   has_many :items, through: :cart_items
+
+  extend FriendlyId
+  friendly_id :title, use: :slugged
 end

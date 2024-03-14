@@ -11,8 +11,11 @@ class User < ApplicationRecord
 
   after_create :create_empty_cart, :welcome_send
 
+  extend FriendlyId
+  friendly_id :email, use: :slugged
+
   def create_empty_cart
-    Cart.create(user: self, price: 0)
+    Cart.create(user: self, price: 0, title: "my_cart")
   end
 
   def welcome_send

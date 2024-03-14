@@ -8,12 +8,13 @@ class CartsController < ApplicationController
 
   # GET /carts/1 or /carts/1.json
   def show
+    @cart = Cart.friendly.find_by_slug(params[:slug])
     @all_items = []
-    @all_cart_items = CartItem.where(cart: current_user.cart)
+    @all_cart_items = CartItem.where(cart: @cart)
     @all_cart_items.each do |instance|
       @all_items << instance.item # instance est une instance de CartItem, donc instance.item est une instance de Item (le produit)
     end
-    @cart = current_user.cart
+    
   end
 
   # GET /carts/new
@@ -65,8 +66,8 @@ class CartsController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_cart
-      @cart = Cart.find(params[:id])
+     def set_cart
+      @cart = Cart.friendly.find_by_slug(params[:slug])
     end
 
     # Only allow a list of trusted parameters through.

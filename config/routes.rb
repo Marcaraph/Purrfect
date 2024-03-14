@@ -3,8 +3,7 @@ Rails.application.routes.draw do
   devise_for :users, controllers: {
     registrations: 'users/registrations'
   }
-
-  resources :carts, except: [:index]
+  resources :carts, except: [:index], param: :slug
   resources :items
   resources :cart_items, only: [:create, :destroy]
   resources :orders, only: [:new, :create]
