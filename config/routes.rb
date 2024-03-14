@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   # resources :users do
   #   resources :carts, except: [:index]
   # end
-  resources :carts, except: [:index]
+  resources :carts, except: [:index], param: :slug
   resources :items
   resources :cart_items, only: [:create, :destroy]
   resources :orders, only: [:new, :create]

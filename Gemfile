@@ -81,3 +81,5 @@ end
 gem "dockerfile-rails", ">= 1.6", :group => :development
 
 gem "letter_opener", "~> 1.9"
+
+gem "friendly_id", "~> 5.5"
