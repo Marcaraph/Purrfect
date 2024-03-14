@@ -131,11 +131,7 @@ svg{
 
 .show_item_button_container {
     display: flex;
-    justify-content: center;
-}
-
-.show_item_button_container button{
-    margin: 0 2em;
+    justify-content: space-evenly;
 }
 
 /* -------------------------------------------------------------------- */ 
