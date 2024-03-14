@@ -62,7 +62,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   # The path used after edit.
   def after_update_path_for(resource)
-    edit_user_registration_path
+    user_path(current_user)
   end
 
 
