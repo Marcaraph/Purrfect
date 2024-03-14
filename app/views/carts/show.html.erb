@@ -8,7 +8,6 @@
 <% else %>
 <div class="container-fluid d-flex cart_background">
   <div class="row">
-
     <% @all_cart_items.each do |cart_item| %>
     <div class="card-columns col-md-12"> <!-- Début de la div des cartes -->
       <div class="row cart_card">
@@ -25,7 +24,7 @@
             <p> <%= cart_item.item.description %></p> 
           </div>
           <div class="cart-item-summary col-2">
-            <p>Prix: <%= cart_item.item.price %> € </p>
+            <p>Prix: <%= cart_item.item.price %>€</p>
             <p>Quantity: 1</p>
             <%= button_to "Delete Item", cart_item_path(cart_item), method: :delete, class: "btn btn-secondary" %>
             
