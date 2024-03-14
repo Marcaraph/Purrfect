@@ -144,6 +144,7 @@ svg{
     color: #FEE8B0;
     transition: 0.3s;
     --bs-btn-active-bg: #F97B22;
+    --bs-btn-disabled-bg: #F97B22; 
 }
 
 .btn-primary:hover{
@@ -160,6 +161,7 @@ svg{
     color: #FEE8B0;
     transition: 0.3s;
     --bs-btn-active-bg: #A75E4E;
+    --bs-btn-disabled-bg: #A75E4E; 
 }
 
 .btn-secondary:hover{
@@ -207,8 +209,6 @@ svg{
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    
 }
 
 .empty_cart{
