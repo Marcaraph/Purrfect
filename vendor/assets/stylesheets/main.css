@@ -1,3 +1,4 @@
+@import url('https://fonts.cdnfonts.com/css/cattie-2');
 
 html{
     height: 100vh;
@@ -66,6 +67,11 @@ body{
 
 svg{
     fill: #F97B22;
+}
+
+.cattie_font {
+    font-family: 'Cattie', sans-serif;
+    font-size: 4.5em;
 }
 
 /* FOOTER */
