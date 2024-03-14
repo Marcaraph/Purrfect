@@ -11,11 +11,11 @@
 			<!-- Form START -->
 			<form class="file-upload">
 				<div class="row mb-5 gx-5">
-					<!-- Contact detail -->
+					<!-- Contact Details -->
 					<div class="col-xxl-8 mb-xxl-0">
 						<div class="bg-secondary-soft px-4 py-5 rounded profile_bg">
 							<div class="row g-3">
-								<h4 class="mb-4 mt-0">Contact detail</h4>
+								<h4 class="mb-4 mt-0">Contact details</h4>
 								<!-- First Name -->
 								<div class="col-md-6">
 									<label class="form-label">First Name :</label>
@@ -74,3 +74,26 @@
 		</div>
 	</div>
 	</div>
+
+<div class="container orders_on_profile">
+	<div class="my-5 d-flex align-items-center gap-3 profile_border">
+		<h3>Your Orders</h3>
+		<hr>
+	</div>
+		<table>
+			<tr>
+				<th>Order ID</th>
+				<th>Date</th>
+				<th>Items</th>
+				<th>Price</th>
+			</tr>
+			<% @order.each do |order| %>
+            <tr>
+				<td> <%= order.id %> </td>
+				<td> <%=order.created_at.strftime('%m/%d/%Y %H:%M:%S')%> </td>
+				<td> <%= OrderItem.where(order: order).all.length %> </td>
+				<td> <%= order.price %>€</td>
+			</tr>
+            <% end %>
+		</table>
+</div>

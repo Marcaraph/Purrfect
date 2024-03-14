@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
   
-  devise_for :users
-  # resources :users do
-  #   resources :carts, except: [:index]
-  # end
+  devise_for :users, controllers: {
+    registrations: 'users/registrations'
+  }
   resources :carts, except: [:index], param: :slug
   resources :items
   resources :cart_items, only: [:create, :destroy]
