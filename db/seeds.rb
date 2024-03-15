@@ -24,8 +24,8 @@ admin_emails.each do |email|
   user.save!
 end
 
-#création de 20 users
-20.times do
+#création de 10 users
+10.times do
   password = "admin123"
   password_confirmation = password
   user = User.new(email: Faker::Internet.email, password: password, password_confirmation: password_confirmation, admin: false)
@@ -38,25 +38,25 @@ User.all.each do |user|
 end
 
 #création de 10 cart items
-10.times do
-  item = Item.all.sample
-  cart = Cart.all.sample
-  cart_item = CartItem.create(cart: cart, item: item, price: item.price)
-  Cart.find(cart.id).update(price: cart.price + cart_item.price)
-end
+# 10.times do
+#   item = Item.all.sample
+#   cart = Cart.all.sample
+#   cart_item = CartItem.create(cart: cart, item: item, price: item.price)
+#   Cart.find(cart.id).update(price: cart.price + cart_item.price)
+# end
 
 #création de 10 orders
-10.times do 
-  cart = Cart.all.sample
-  cart_items = CartItem.where(cart: cart)
+# 10.times do 
+#   cart = Cart.all.sample
+#   cart_items = CartItem.where(cart: cart)
 
-  #CREATION OF ORDER ( it's a cart already paid)
-  order = Order.create(user: cart.user, price: cart.price)
-  Cart.update(user: cart.user, price: 0)
-  CartItem.delete_by(cart_id: cart)
+#   #CREATION OF ORDER ( it's a cart already paid)
+#   order = Order.create(user: cart.user, price: cart.price)
+#   Cart.update(user: cart.user, price: 0)
+#   CartItem.delete_by(cart_id: cart)
 
-  # CREATION OF ORDER_ITEMS ( History of all orders with link Items)
-  cart_items.each do |cart_item|
-    OrderItem.create(item: cart_item.item, order: order, price: cart_item.price)
-  end
-end
+#   # CREATION OF ORDER_ITEMS ( History of all orders with link Items)
+#   cart_items.each do |cart_item|
+#     OrderItem.create(item: cart_item.item, order: order, price: cart_item.price)
+#   end
+# end

@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  namespace :admin do
+      resources :carts
+      resources :cart_items
+      resources :items
+      resources :orders
+      resources :order_items
+      resources :users
+
+      root to: "carts#index"
+    end
   
   devise_for :users, controllers: {
     registrations: 'users/registrations'
@@ -13,6 +23,10 @@ Rails.application.routes.draw do
     get 'success', to: 'checkout#success', as: 'checkout_success'
     get 'cancel', to: 'checkout#cancel', as: 'checkout_cancel'
 end
+
+# scope 'admin' do
+#   get 'items/new', to: 'items#new'
+# end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.

@@ -35,16 +35,25 @@
       <li class="nav-item">
         <a class="nav-link" href="#">Contact Us</a>
       </li>
+
+
     </ul>
     <ul class="navbar-nav m-2">
       <div class="nav-item m-2">
+
       <% if user_signed_in? %>
           <!-- SHOW THE DROPDOWN ASSOCIATED TO THE CONNECTED USER --> 
           <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Account</a>
               <ul class="dropdown-menu bg_dropdown dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
               <li><%= link_to "My Profile", user_path(current_user), class: "dropdown-item" %></li>
+              <% if current_user.admin %>
+                <li>
+                  <%= link_to "Admin Dashboard", admin_root_path, class: "dropdown-item" %>
+                </li>
+              <% end %>
               <li><%= link_to "Sign out", destroy_user_session_path, method: :delete, data: {turbo_method: :delete, confirm: "Are you sure?", turbo_confirm: "Are you sure?" }, class: "dropdown-item" %></li>
+              
               </ul>
           </li>
       <% else %>
@@ -59,6 +68,7 @@
           </div>
         <% end %>
         </li>
+
       </div>
       <% if user_signed_in? %>
       <li class="nav-item m-2">
