@@ -22,5 +22,9 @@ class User < ApplicationRecord
     UserMailer.welcome_email(self).deliver_now
   end
 
+  before_create :default_admin
+  def default_admin
+    self.admin ||= false
+  end
 
 end
