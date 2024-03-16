@@ -83,3 +83,5 @@ gem "dockerfile-rails", ">= 1.6", :group => :development
 gem "letter_opener", "~> 1.9"
 
 gem "friendly_id", "~> 5.5"
+
+gem "administrate", "~> 0.20.1"
