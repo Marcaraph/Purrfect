@@ -6,7 +6,7 @@ class ItemsController < ApplicationController
     @items = Item.order(created_at: :desc)
   end
 
-  # GET /items/1 or /items/1.json
+  # GET /items/1 or /items/1.json update comments
   def show
 
   end
